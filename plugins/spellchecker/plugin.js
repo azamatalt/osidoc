@@ -139,12 +139,12 @@
 
 
 			function setUpContextMenu(editor, path) {
-			var iconpath = 'https://firebasestorage.googleapis.com/v0/b/osidoc-d6fb4.appspot.com/o/close.png?alt=media&token=7d3326a2-2460-477e-9a47-986a61bb9cd9';
+			// var iconpath = 'https://firebasestorage.googleapis.com/v0/b/osidoc-d6fb4.appspot.com/o/close.png?alt=media&token=7d3326a2-2460-477e-9a47-986a61bb9cd9';
 			if (!editor.contextMenu) {
-				setTimeout(function(){setUpContextMenu(editor, path);},100);
+				setTimeout(function(){setUpContextMenu(editor);},100);
 				return;
 			}
-			var generateSuggestionMenuItem = function(suggestion, icon, typo, element) {
+			var generateSuggestionMenuItem = function(suggestion, typo, element) {
 				return {
 					label: suggestion,
 					// icon: icon ? iconpath : null,
@@ -198,7 +198,7 @@
 
                         editor.addMenuItem('spellcheck_nosug', {
                             label: editor.lang.spellchecker.nosuggestions,
-                            icon: iconpath,
+                            // icon: iconpath,
                             group: 'spellcheck'
                         });
                         retobj["spellcheck_nosug"] = CKEDITOR.TRISTATE_DISABLED;
