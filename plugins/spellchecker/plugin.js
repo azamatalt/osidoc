@@ -147,7 +147,7 @@
 			var generateSuggestionMenuItem = function(suggestion, icon, typo, element) {
 				return {
 					label: suggestion,
-					icon: icon ? iconpath : null,
+					// icon: icon ? iconpath : null,
 					group: 'spellcheck',
 					onClick: function() {
 						/*
