@@ -100,13 +100,13 @@
 				label: 'Spell Checking by Nanospell',
 				command: 'nanospell',
 				toolbar: 'nanospell',
-				icon: this.path + 'icons/nanospell.png'
+				icon: 'https://firebasestorage.googleapis.com/v0/b/osidoc-d6fb4.appspot.com/o/close.png?alt=media&token=7d3326a2-2460-477e-9a47-986a61bb9cd9'
 			});
 			editor.ui.addButton('Nanospell', {
 				label: 'Spell Checking by Nanospell',
 				command: 'nanospell',
 				toolbar: 'Nanospell',
-				icon: this.path + 'icons/nanospell.png'
+				icon: 'https://firebasestorage.googleapis.com/v0/b/osidoc-d6fb4.appspot.com/o/close.png?alt=media&token=7d3326a2-2460-477e-9a47-986a61bb9cd9'
 			});
 			*/
 			editor.on("key", function(k) {
@@ -139,7 +139,7 @@
 
 
 			function setUpContextMenu(editor, path) {
-			var iconpath = path + 'icons/spellchecker.png';
+			var iconpath = 'https://firebasestorage.googleapis.com/v0/b/osidoc-d6fb4.appspot.com/o/close.png?alt=media&token=7d3326a2-2460-477e-9a47-986a61bb9cd9';
 			if (!editor.contextMenu) {
 				setTimeout(function(){setUpContextMenu(editor, path);},100);
 				return;
