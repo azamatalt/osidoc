@@ -20,7 +20,7 @@
 		/* #0 plugin init layer */
 	CKEDITOR.plugins.add('spellchecker', {
 		lang: 'de,en,es,fr,it,nl,pt',
-		icons: 'spellchecker',
+		// icons: 'spellchecker',
 		hidpi: true,
 		init: function(editor) {
 
